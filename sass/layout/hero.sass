@@ -108,6 +108,18 @@
     min-height: 50vh
   &.is-fullheight
     min-height: 100vh
+  .hero-background
+      position: absolute
+      height: 100%
+      width: 100%
+      img
+        height: 100%
+        min-width: 100%
+      @for $percent from 0 through 100
+        &.is-transparent-#{$percent}
+          img
+            opacity: $percent / 100
+
 
 // Components
 
